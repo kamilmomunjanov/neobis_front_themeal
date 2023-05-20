@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Product from "./Components/Product/Product";
 import NotFound from "./Components/NotFound/NotFound";
 import Layout from "./Components/Layout/Layout";
+import "./App.css"
 
 function App() {
   return (

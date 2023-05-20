@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
-import {logDOM} from "@testing-library/react";
+import "./SearchMeal.css"
 
 const SearchMeal = () => {
 
@@ -16,19 +16,21 @@ const SearchMeal = () => {
     const navigate = useNavigate()
 
     return (
-        <section>
-            <h2>Search a meal</h2>
-            <form onSubmit={findMeals}>
-                <input type="text"/>
-                <button type="submit" >Search</button>
+        <section className="search">
+            <h2 className="search__title">Find your Meal</h2>
+            <form className="search__form" onSubmit={findMeals}>
+                <input placeholder="Find your Meal..." className="search__input" type="text"/>
+                <button className="search__btn" type="submit" >Search</button>
             </form>
-            <div>
+            <div className="container">
                 {
                     meals.map((item) => (
                         <div key={item.idMeal}>
+                            <img onClick={() => navigate(`/${item.idMeal}`)} src={item.strMealThumb} alt=""/>
+                            <div className="search__content-right">
                             <p>{item.strMeal}</p>
                             <span>{item.strCategory} |  {item.strArea}</span>
-                            <img onClick={() => navigate(`/${item.idMeal}`)} src={item.strMealThumb} alt=""/>
+                            </div>
                         </div>
                     ))
                 }

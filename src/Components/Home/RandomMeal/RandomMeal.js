@@ -1,5 +1,6 @@
-import React,{useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from "axios";
+import "./RandomMeals.css";
 
 const RandomMeal = () => {
     const [randomMeal, setRandomMeal] = useState({})
@@ -12,11 +13,18 @@ const RandomMeal = () => {
 
     if ('strMeal' in randomMeal) {
         return (
-            <section>
-                <h2>Meal of the day</h2>
-                <p>{randomMeal.strMeal}</p>
-                <span>{randomMeal.strCategory} |  {randomMeal.strArea}</span>
-                <img src={randomMeal.strMealThumb} alt=""/>
+            <section className="randomMeals">
+                <div className="container">
+                    <div className="randomMeals__box">
+                        <div className="randomMeals__box-left">
+                            <h2 className='randomMeals__title'>Meal of the day</h2>
+                            <p className="randomMeals__subtitle">{randomMeal.strMeal}</p>
+                            <span
+                                className="randomMeals__category">{randomMeal.strCategory} | {randomMeal.strArea}</span>
+                        </div>
+                        <img className="randomMeals__img" src={randomMeal.strMealThumb} alt=""/>
+                    </div>
+                </div>
             </section>
         );
     } else {

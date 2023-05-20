@@ -1,0 +1,22 @@
+.header{
+    background-color: #d49726;
+    padding: 30px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    max-width: 1140px;
+    width: 100%;
+
+}
+
+.header__nav-title{
+    color: white;
+    font-style: italic;
+}
+
+.header__nav-title:hover{
+    text-decoration: underline;
+}
+

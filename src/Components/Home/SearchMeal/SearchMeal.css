@@ -1,0 +1,33 @@
+
+.search{
+    padding: 0 0 60px;
+}
+
+.search__title{
+    text-align: center;font-style: italic;
+}
+
+.search__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search__input{
+    padding: 15px 70px 15px 10px;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+.search__btn{
+    padding: 15px;
+    border: none;
+    background-color: #d49726;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 3px;
+}

@@ -1,0 +1,40 @@
+
+
+.randomMeals{
+    padding: 40px 0 60px;
+}
+
+.randomMeals__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.randomMeals__box-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.randomMeals__title{
+    font-size: 32px;
+    font-style: italic;
+}
+
+.randomMeals__subtitle{
+    font-size: 38px;
+    font-style: italic;
+    color: #d49726;
+    font-weight: bold;
+}
+
+.randomMeals__category{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.randomMeals__img{
+    width: 500px;
+    border-radius: 10px;
+}
