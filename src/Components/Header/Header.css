@@ -6,17 +6,19 @@
 .header__nav{
     display: flex;
     justify-content: center;
-    max-width: 1140px;
-    width: 100%;
-
+    align-items: center;
+    column-gap: 100px;
 }
 
 .header__nav-title{
     color: white;
     font-style: italic;
+    text-decoration: none;
 }
 
 .header__nav-title:hover{
+    color: white;
     text-decoration: underline;
 }
+
 

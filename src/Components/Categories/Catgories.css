@@ -1,0 +1,16 @@
+
+
+.card-text{
+    height: 200px;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.card-text:hover{
+    overflow: auto;
+}
+
+.row{
+    margin-top: 20px;
+    row-gap: 20px;
+}
