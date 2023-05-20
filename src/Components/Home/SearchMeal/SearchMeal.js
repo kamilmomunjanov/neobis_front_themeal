@@ -22,14 +22,14 @@ const SearchMeal = () => {
                 <input placeholder="Find your Meal..." className="search__input" type="text"/>
                 <button className="search__btn" type="submit" >Search</button>
             </form>
-            <div className="container">
+            <div className="search__box container">
                 {
                     meals.map((item) => (
-                        <div key={item.idMeal}>
-                            <img onClick={() => navigate(`/${item.idMeal}`)} src={item.strMealThumb} alt=""/>
+                        <div className="search__content" key={item.idMeal}>
+                            <img className="search__img" onClick={() => navigate(`/${item.idMeal}`)} src={item.strMealThumb} alt=""/>
                             <div className="search__content-right">
-                            <p>{item.strMeal}</p>
-                            <span>{item.strCategory} |  {item.strArea}</span>
+                            <p className="search__right-title">{item.strMeal}</p>
+                            <span className="search__right-subtitle">{item.strCategory} |  {item.strArea}</span>
                             </div>
                         </div>
                     ))

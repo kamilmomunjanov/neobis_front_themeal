@@ -31,3 +31,51 @@
     cursor: pointer;
     border-radius: 3px;
 }
+
+.search__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.search__content::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d49726;
+    top: 103%;
+}
+
+
+.search__box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.search__content-right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.search__right-title{
+    font-size: 38px;
+    font-style: italic;
+    color: #d49726;
+    font-weight: bold;
+}
+
+.search__right-subtitle{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.search__img{
+    width: 500px;
+    border-radius: 10px;
+}
